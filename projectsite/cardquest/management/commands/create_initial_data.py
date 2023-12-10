@@ -13,17 +13,18 @@ class Command(BaseCommand):
 
     def create_pokemon_cards(self):
         # Create Pokemon Card instances
-        card1 = PokemonCard(name="Pikachu", rarity="Rare", hp=60, card_type="Electric", attack="Thunder Shock", description="A mouse-like pokemon that can generate electricity.",
-                            weakness="Ground", card_number=25, release_date="1999-01-09", evolution_stage="Basic", abilities="Static",image_url="https://assets.pokemon.com/assets/cms2/img/pokedex/full/025.png")
-        card2 = PokemonCard(name="Charmeleon", rarity="Rare", hp=120, card_type="Fire", attack="Flamethrower",
-                            description="It has a barbaric nature. In battle, it whips its fiery tail around and slashes away with sharp claws.",
-                            weakness="Water", card_number=5, release_date="1996-02-27", evolution_stage="Stage 2", abilities="Solar Power",image_url="https://assets.pokemon.com/assets/cms2/img/pokedex/full/005.png")
-        card3 = PokemonCard(name="Mewtwo", rarity="Uncommon", hp=150, card_type="Psychic", attack="Psychic",
-                            description="A genetically engineered pokemon that has powerful psychic abilities.",
-                            weakness="Dark", card_number=10, release_date="1996-02-27", evolution_stage="Basic", abilities="Pressure")
-        card4 = PokemonCard(name="Caterpie", rarity="Common", hp=45, card_type="Grass", attack="Bug Bite",
+        card1 = PokemonCard(name="Caterpie", rarity="Common", hp=45, card_type="Grass", attack="Bug Bite",
                             description="For protection, it releases a horrible stench from the antenna on its head to drive away enemies.",
                             weakness="Fire", card_number=44, release_date="1996-02-27", evolution_stage="Basic", abilities="Shield Dust")
+        card2 = PokemonCard(name="Cryogonal", rarity="Rare", hp=80, card_type="Ice", attack="Aurora Beam",
+                            description="Cryogonal appear during cold seasons. It is said that people and Pokémon who die on snowy mountains are reborn into these Pokémon.",
+                            weakness="Fire", card_number=615, release_date="2010-09-18", evolution_stage="Basic", abilities="Levitate")
+        card3 = PokemonCard(name="Deoxys", rarity="Rare", hp=50, card_type="Pyschic", attack="Cosmic Power",
+                             description="An alien-like, bipedal Pokemon that has four forms. Each focused on a different stat.",
+                             weakness="Dark", card_number=186, release_date="2004-11-18", evolution_stage="Basic", abilities="Pressure")
+        card4 = PokemonCard(name="Charmeleon", rarity="Rare", hp=120, card_type="Fire", attack="Flamethrower",
+                            description="It has a barbaric nature. In battle, it whips its fiery tail around and slashes away with sharp claws.",
+                            weakness="Water", card_number=5, release_date="1996-02-27", evolution_stage="Stage 2", abilities="Solar Power",image_url="https://assets.pokemon.com/assets/cms2/img/pokedex/full/005.png")
         card5 = PokemonCard(name="Squirtle", rarity="Rare", hp=40, card_type="Water", attack="Bubble",
                             description="A turtle-like pokemon that can squirt water.",
                             weakness="Grass", card_number=63, release_date="1996-02-27", evolution_stage="Basic", abilities="Torrent")
@@ -36,9 +37,9 @@ class Command(BaseCommand):
         card8 = PokemonCard(name="Raikou", rarity="Rare", hp=90, card_type="Electric", attack="Thunder Fang",
                             description="Raikou embodies the speed of lightning. The roars of this Pokémon send shock waves shuddering through the air and shake the ground as if lightning bolts had come crashing down.",
                             weakness="Ground", card_number=243, release_date="1999-11-21", evolution_stage="Basic", abilities="Pressure")
-        card9 = PokemonCard(name="Cryogonal", rarity="Rare", hp=80, card_type="Ice", attack="Aurora Beam",
-                            description="Cryogonal appear during cold seasons. It is said that people and Pokémon who die on snowy mountains are reborn into these Pokémon.",
-                            weakness="Fire", card_number=615, release_date="2010-09-18", evolution_stage="Basic", abilities="Levitate")
+        card9 = PokemonCard(name="Caterpie", rarity="Common", hp=45, card_type="Grass", attack="Bug Bite",
+                            description="For protection, it releases a horrible stench from the antenna on its head to drive away enemies.",
+                            weakness="Fire", card_number=44, release_date="1996-02-27", evolution_stage="Basic", abilities="Shield Dust")
         card10 = PokemonCard(name="Pancham", rarity="Uncommon", hp=67, card_type="Fighting", attack="Circle Throw",
                              description="It chooses a Pangoro as its master and then imitates its masters actions. This is how it learns to battle and hunt for prey",
                              weakness="Fairy", card_number=674, release_date="2013-08-12", evolution_stage="Basic", abilities="Mold Breaker")
@@ -69,9 +70,8 @@ class Command(BaseCommand):
         card19 = PokemonCard(name="Totodile", rarity="Common", hp=50, card_type="Water", attack="Water Gun",
                              description="Is a bipedal, crocodilian Pokemon with well-developed jaws.",
                              weakness="Grass", card_number=158, release_date="2001-03-19", evolution_stage="Basic", abilities="Torrent")
-        card20 = PokemonCard(name="Deoxys", rarity="Rare", hp=50, card_type="Pyschic", attack="Cosmic Power",
-                             description="An alien-like, bipedal Pokemon that has four forms. Each focused on a different stat.",
-                             weakness="Dark", card_number=186, release_date="2004-11-18", evolution_stage="Basic", abilities="Pressure")
+        card20 = PokemonCard(name="Pikachu", rarity="Rare", hp=60, card_type="Electric", attack="Thunder Shock", description="A mouse-like pokemon that can generate electricity.",
+                            weakness="Ground", card_number=25, release_date="1999-01-09", evolution_stage="Basic", abilities="Static",image_url="https://assets.pokemon.com/assets/cms2/img/pokedex/full/025.png")
 
         # Save instances to database
         # card2.save()
